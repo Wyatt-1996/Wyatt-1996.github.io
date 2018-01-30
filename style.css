@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    background-image: url("hdcolor.jpg");
+}
+
+p {
+    color: white;
+    font-size: 72px;
+    font-family: cursive;
+    margin-left: 30px;
+}
