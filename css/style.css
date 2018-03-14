@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    background-image: url("../images/mtns.jpg");
+    background-size: 100%;
+}
+
+.header {
+    background-color: azure;
+    height: 45px;
+    opacity: 0.75;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#menu {
+    margin: 0 auto;
+}
+
+.menu-item {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+.img {
+    margin-top: 180px;
+}
+
+#face {
+    width: 240px;
+    margin-left: 96px;
+}
+
+#name {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: azure;
+    text-align: center;
+    margin-left: 45px;
+}
