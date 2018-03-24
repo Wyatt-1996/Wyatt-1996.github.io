@@ -5,194 +5,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
-    <title>Wyatt Sommer - Portfolio</title>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- favicon -->
+    <link rel="icon" href="images/w.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="images/w.png" type="image/x-icon"/>
+    <title>&copy; Wyatt Sommer - Portfolio</title>
 </head>
 
-<body>
+<body class="uk-animation-scale-up">
 
-    <div class="container-fluid">
-
-        <div class="row home">
-
-            <div class="col-sm-12 col-lg-12">
-
-                <a href="index.html">
-                <h1 class="heading">
-                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-                    WYATT SOMMER
-                </h1>
-                </a>
-                
-            </div>
-            <!-- /.col -->
-
-        </div>
-        <!-- /.row -->
-
-        <div class="row header">
-
-            <div id="menu">
-
-                <div class="col-sm-4 col-md-4 col-lg-4 menu-div">
-
-                    <a href="portfolio.html">
-                        <h1 class="menu-item">Portfolio</h1>
-                    </a>
-
+    <div id="slider" class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
+        <ul class="uk-slideshow-items">
+            <li>
+                <img src="images/mtns.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-position-small uk-text-center">
+                    <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Heading</h2>
+                    <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
                 </div>
-
-                <div class="col-sm-4 col-md-4 col-lg-4 menu-div">
-
-                    <a href="about.html">
-                        <h1 class="menu-item">About</h1>
-                    </a>
-
+            </li>
+            <li>
+                <img src="images/mtns.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-position-small uk-text-center">
+                    <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Heading</h2>
+                    <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
                 </div>
-
-                <div class="col-sm-4 col-md-4 col-lg-4 menu-div">
-
-                    <a href="contact.html">
-                        <h1 class="menu-item">Contact</h1>
-                    </a>
-
+            </li>
+            <li>
+                <img src="images/mtns.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-position-small uk-text-center">
+                    <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Heading</h2>
+                    <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
                 </div>
-
-            </div>
-            <!-- /.menu -->
-
-        </div>
-        <!-- /.header -->
-
-        <div id="gallery">
-
-            <div class="row">
-
-                <div class="col-sm-6 col-lg-4">
-
-                    <div class="thumbnail">
-                        <img id="hangman-img" class="thumb-img" src="images/hdcolor.jpg" alt="hangman">
-                        <div class="caption">
-                            <h3>Hangman</h3>
-                            <p>A classic game, enjoyed by people of all ages. With a modern twist.</p>
-                            <p>
-                                <a href="wyattsommer.com/hangman-game" class="btn btn-primary" role="button">Play Now</a>
-                            </p>
-                        </div>
-                        <!-- /.caption -->
-
-                    </div>
-                    <!-- /.thumbnail -->
+            </li>
+            <li>
+                <img src="images/mtns.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-position-small uk-text-center">
+                    <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Heading</h2>
+                    <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
                 </div>
-                <!-- /.col -->
+            </li>
+        </ul>
 
-                <div class="col-sm-6 col-lg-4">
-
-                    <div class="thumbnail">
-                        <img src="images/hdcolor.jpg" alt="Crystals">
-                        <div class="caption">
-                            <h3>Crystals Collector</h3>
-                            <p>Go crystal hunting for valuable gems. Add up the values to reach the goal. Gem values reset after
-                                each game.</p>
-                            <p>
-                                <a href="wyattsommer.com/week-4-game" class="btn btn-primary" role="button">Play Now</a>
-                            </p>
-                        </div>
-                        <!-- /.caption -->
-
-                    </div>
-                    <!-- /.thumbnail -->
-                </div>
-                <!-- /.col -->
-
-                <div class="col-sm-6 col-lg-4">
-
-                    <div class="thumbnail">
-                        <img src="images/hdcolor.jpg" alt="trivia">
-                        <div class="caption">
-                            <h3>Trivia Game</h3>
-                            <p>Like jeopardy, but totally different. See if you can answer these super hard questions!</p>
-                            <p>
-                                <a href="wyattsommer.com/trivia-game" class="btn btn-primary" role="button">Play Now</a>
-                            </p>
-                        </div>
-                        <!-- /.caption -->
-
-                    </div>
-                    <!-- /.thumbnail -->
-                </div>
-                <!-- /.col -->
-
-            </div>
-            <!-- /.row1 -->
-
-            <div class="row">
-
-                <div class="col-sm-6 col-lg-4">
-
-                    <div class="thumbnail">
-                        <img src="images/hdcolor.jpg" alt="trivia">
-                        <div class="caption">
-                            <h3>Trivia Game</h3>
-                            <p>Like jeopardy, but totally different. See if you can answer these super hard questions!</p>
-                            <p>
-                                <a href="#" class="btn btn-primary" role="button">Play Now</a>
-                            </p>
-                        </div>
-                        <!-- /.caption -->
-
-                    </div>
-                    <!-- /.thumbnail -->
-                </div>
-                <!-- /.col -->
-
-                <div class="col-sm-6 col-lg-4">
-
-                    <div class="thumbnail">
-                        <img src="images/hdcolor.jpg" alt="trivia">
-                        <div class="caption">
-                            <h3>Trivia Game</h3>
-                            <p>Like jeopardy, but totally different. See if you can answer these super hard questions!</p>
-                            <p>
-                                <a href="#" class="btn btn-primary" role="button">Play Now</a>
-                            </p>
-                        </div>
-                        <!-- /.caption -->
-
-                    </div>
-                    <!-- /.thumbnail -->
-                </div>
-                <!-- /.col -->
-
-                <div class="col-sm-6 col-lg-4">
-                    <div class="thumbnail">
-                        <img src="images/hdcolor.jpg" alt="trivia">
-                        <div class="caption">
-                            <h3>Trivia Game</h3>
-                            <p>Like jeopardy, but totally different. See if you can answer these super hard questions!</p>
-                            <p>
-                                <a href="#" class="btn btn-primary" role="button">Play Now</a>
-                            </p>
-                        </div>
-                        <!-- /.caption -->
-
-                    </div>
-                    <!-- /.thumbnail -->
-                </div>
-                <!-- /.col -->
-
-            </div>
-            <!-- /.row2 -->
-
-        </div>
-        <!-- /.gallery -->
-
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
     </div>
-    <!-- /.container -->
+
+    <div class="uk-container-expand">
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">Item</div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">Item</div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">Item</div>
+            </div>
+        </div>
+
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">Item</div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">Item</div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">Item</div>
+            </div>
+        </div>
+
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">Item</div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">Item</div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">Item</div>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 
 </html>
+<!-- /. -->

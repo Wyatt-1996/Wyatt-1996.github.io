@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- favicon -->
+    <link rel="icon" href="images/w.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/w.png" type="image/x-icon" />
+    <title>&copy; Wyatt Sommer - Contact</title>
+</head>
+
+<body class="uk-animation-slide-bottom">
+
+    <div class="uk-container" id="contact-form">
+        <form>
+            <fieldset class="uk-fieldset">
+
+                <legend class="uk-legend">Send Message</legend>
+
+                <div class="uk-margin">
+                    <input id="input-name" class="uk-input" type="text" placeholder="Name">
+                </div>
+
+                <div class="uk-margin">
+                    <input id="input-email" class="uk-input" type="email" placeholder="Email">
+                </div>
+
+                <div class="uk-margin">
+                    <select id="input-option" class="uk-select">
+                        <option>Business Inquiry</option>
+                        <option>Personal</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="uk-margin">
+                    <textarea id="input-message" class="uk-textarea" rows="5" placeholder="Your Message"></textarea>
+                </div>
+
+                <button id="submit-btn" class="uk-button uk-button-primary" uk-toggle="target: #modal-example">Submit</button>
+
+            </fieldset>
+        </form>
+
+        <div id="social">
+            <h3 id="connect">Connect With Me</h3>
+            <div id="imgs">
+                <a class="imglink" href="https://linkedin.com/in/wyatt-sommer-b58136152/">
+                <img id="li" src="images/linkedin.png" alt="linkedin">
+                </a>
+                
+                <a class="imglink" href="https://stackexchange.com/users/12631665/wyatt-sommer?tab=accounts">
+                <img id="so" src="images/stackoverflow.png" alt="stack overflow">
+                </a>
+                
+                <a class="imglink" href="https://github.com/Wyatt-1996">
+                <img id="gh" src="images/Github-120.png" alt="github">
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- message sent modal -->
+    <div id="modal-example" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <h2 class="uk-modal-title">Message Sent</h2>
+            <p>Thank you for your message, you will receive a response shortly!</p>
+            <p class="uk-text-left">
+                <button id="close-modal" class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+<!-- /. -->

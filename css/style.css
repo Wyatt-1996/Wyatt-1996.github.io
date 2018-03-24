@@ -1,42 +1,54 @@
-body {
-    margin: 0;
-    background-image: url("../images/mtns.jpg");
-    background-size: 100%;
-}
-
-.header {
-    background-color: azure;
-    height: 45px;
-    opacity: 0.75;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-#menu {
-    margin: 0 auto;
-}
-
-.menu-item {
-    text-align: center;
-    font-size: 18px;
-    margin-top: 12px;
-}
-
-.img {
-    margin-top: 180px;
-}
-
-#face {
-    width: 240px;
-    margin-left: 96px;
+html {
+    background: rgba(240, 248, 255, 0.509);
 }
 
 #name {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    color: azure;
-    text-align: center;
-    margin-left: 45px;
+    margin-top: -120px
+}
+#about {
+    margin-top: -60px;
+}
+#portfolio {
+    margin-top: -15px;
+}
+#contact {
+    margin-top: 30px;
+}
+
+.menu-link {
+    color: rgb(143, 143, 143);
+}
+
+/* about */
+#all {
+    margin-top: 9%
+}
+
+#profile-pic {
+    border: 1px solid grey;
+}
+
+/* portfolio */
+#slider {
+    height: 100vh;
+}
+
+/* contact */
+#contact-form {
+    margin-top: 6%;
+}
+#social {
+    margin-top: 120px;
+}
+#li {
+    width: 45px;
+}
+#so {
+    width: 45px;
+    margin-left: 15px;
+}
+#gh {
+    width: 45px;
+    margin-left: 15px;
 }
