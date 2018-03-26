@@ -34,6 +34,20 @@ html {
     height: 100vh;
 }
 
+#cards {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.folio-img {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 /* contact */
 #contact-form {
     margin-top: 6%;
