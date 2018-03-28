@@ -1,5 +1,8 @@
 $('document').ready(function() {
 
+    // add modal toggle attribute to contact form btn
+    $('#submit-btn').attr('uk-toggle', 'target: #modal-example');
+
     // form submit
     $('#submit-btn').on('click', function() {
         event.preventDefault();
@@ -19,10 +22,12 @@ $('document').ready(function() {
         // capture message
         var inputMessage = $('#input-message').val();
         console.log(inputMessage);
-
+        
         // validate inputs
         if (inputName === '' || inputEmail === '' || inputMessage === '') {
-            alert('Must Complete the Form to Send Message!')
+            alert('Must Complete the Form to Send Message!');
+            // remove modal toggle attribute
+            $('#submit-btn').removeAttr('uk-toggle');
         }
     });
 
@@ -36,3 +41,4 @@ $('document').ready(function() {
 
 
 });
+// .
