@@ -1,0 +1,29 @@
+/* contact */
+.uk-legend {
+    color: white;
+}
+
+#contact-form {
+    margin-top: 150px;;
+}
+#social {
+    margin-top: 120px;
+}
+#li {
+    width: 45px;
+}
+#so {
+    width: 45px;
+    margin-left: 15px;
+}
+#gh {
+    width: 45px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 441px) {
+
+    #social {
+        margin-top: 60px;
+    }
+}

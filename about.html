@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
         crossorigin="anonymous"></script>
@@ -21,21 +24,77 @@
     <title>&copy; Wyatt Sommer - About</title>
 </head>
 
-<body class="uk-animation-slide-top">
+<body>
 
-    <div class="uk-container uk-container-small" id="all">
-        <div class="uk-column-1-2">
-            <img id="profile-pic" src="images/w.png" alt="wyatt sommer">
-            <h1 id="title">About Me</h1>
-            <p id="paragraph">むかし、 むかし、 ある ところ に おじいさん と おばあさん が いました。 おじいさん が 山（やま） へ 木（き） を きり に いけば、 おばあさん は 川（かわ） へ せんたく に でかけます。 「おじいさん、
-                はよう もどって きなされ。」 「おばあさん も き を つけて な。」 まい日（にち） やさしく いい あって でかけます。 むかし、 むかし、 ある ところ に おじいさん と おばあさん が いました。
-                おじいさん が 山（やま） へ 木（き） を きり に いけば、 おばあさん は 川（かわ） へ せんたく に でかけます。 「おじいさん、 はよう もどって きなされ。」 「おばあさん も き を つけて な。」
-                まい日（にち） やさしく いい あって でかけます。 むかし、 むかし、 ある ところ に おじいさん と おばあさん が いました。 おじいさん が 山（やま） へ 木（き） を きり に いけば、おばあさん
-                は 川（かわ） へ せんたく に でかけます。
-            </p>
+    <div class="uk-position-top-left">
+        <a href="index.html" class="uk-icon-link home" uk-icon="home"></a>
+    </div>
+
+    <div class="uk-position-top-right">
+        <h2 class="menu">+</h2>
+        <div uk-dropdown="mode: click">
+            <ul class="uk-list">
+                <li>
+                    <a href="about.html">
+                        <p class="navi onpage">About</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="portfolio.html">
+                        <p class="navi">Projects</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="Resume.html">
+                        <p class="navi">Resumé</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <p class="navi">Contact</p>
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="https://www.linkedin.com/in/wyatt-sommer-b58136152/">
+                        <img class="footer-img" src="images/linkedin.png">
+                    </a>
+                    <a href="https://stackoverflow.com/users/9182832/wyatt-sommer">
+                        <img class="footer-img" src="images/stackoverflow.png">
+                    </a>
+                    <a href="https://github.com/Wyatt-1996">
+                        <img class="footer-img" src="images/Github-120.png">
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 
+    <div id="modal-full" class="uk-modal-full uk-modal" uk-modal>
+        <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+            <button class="uk-modal-close-full" type="button" uk-close></button>
+            <form class="uk-search uk-search-large">
+                <input class="uk-search-input uk-text-center" type="search" autofocus>
+            </form>
+        </div>
+    </div>
+
+    <div class="uk-container uk-container-small animated fadeInUp">
+        <div class="uk-grid-small uk-child-width-expand@s" uk-grid>
+            <div>
+                <img id="profile-pic" src="images/w.png" alt="wyatt sommer">
+            </div>
+            <div>
+                <h1 id="title">About Me</h1>
+                <p id="paragraph">むかし、 むかし、 ある ところ に おじいさん と おばあさん が いました。 おじいさん が 山（やま） へ 木（き） を きり に いけば、 おばあさん は 川（かわ） へ せんたく に でかけます。 「おじいさん、
+                    はよう もどって きなされ。」 「おばあさん も き を つけて な。」 まい日（にち） やさしく いい あって でかけます。 むかし、 むかし、 ある ところ に おじいさん と おばあさん が いました。
+                    おじいさん が 山（やま） へ 木（き） を きり に いけば、 おばあさん は 川（かわ） へ せんたく に でかけます。 「おじいさん、 はよう もどって きなされ。」 「おばあさん も き を つけて
+                    な。」 まい日（にち） やさしく いい あって でかけます。 むかし、 むかし、 ある ところ に おじいさん と おばあさん が いました。 おじいさん が 山（やま） へ 木（き） を きり に いけば、おばあさん
+                    は 川（かわ） へ せんたく に でかけます。
+                </p>
+            </div>
+        </div>
+    </div>
 
 </body>
 

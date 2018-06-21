@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
         crossorigin="anonymous"></script>
@@ -21,9 +23,53 @@
     <title>&copy; Wyatt Sommer - Contact</title>
 </head>
 
-<body class="uk-animation-slide-bottom">
+<body>
 
-    <div class="uk-container" id="contact-form">
+    <div class="uk-position-top-left">
+        <a href="index.html" class="uk-icon-link home" uk-icon="home"></a>
+    </div>
+
+    <div class="uk-position-top-right">
+        <h2 class="menu">+</h2>
+        <div uk-dropdown="mode: click">
+            <ul class="uk-list">
+                <li>
+                    <a href="about.html">
+                        <p class="navi">About</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="portfolio.html">
+                        <p class="navi">Projects</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="Resume.html">
+                        <p class="navi">Resumé</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <p class="navi onpage">Contact</p>
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="https://www.linkedin.com/in/wyatt-sommer-b58136152/">
+                        <img class="footer-img" src="images/linkedin.png">
+                    </a>
+                    <a href="https://stackoverflow.com/users/9182832/wyatt-sommer">
+                        <img class="footer-img" src="images/stackoverflow.png">
+                    </a>
+                    <a href="https://github.com/Wyatt-1996">
+                        <img class="footer-img" src="images/Github-120.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="uk-container animated fadeInUp" id="contact-form">
         <form>
             <fieldset class="uk-fieldset">
 
@@ -54,23 +100,6 @@
             </fieldset>
         </form>
 
-        <div id="social">
-            <h3 id="connect">Connect With Me</h3>
-            <div id="imgs">
-                <a class="imglink" href="https://linkedin.com/in/wyatt-sommer-b58136152/">
-                <img id="li" src="images/linkedin.png" alt="linkedin">
-                </a>
-                
-                <a class="imglink" href="https://stackexchange.com/users/12631665/wyatt-sommer?tab=accounts">
-                <img id="so" src="images/stackoverflow.png" alt="stack overflow">
-                </a>
-                
-                <a class="imglink" href="https://github.com/Wyatt-1996">
-                <img id="gh" src="images/Github-120.png" alt="github">
-                </a>
-            </div>
-        </div>
-
     </div>
     <!-- /.container -->
 
@@ -84,7 +113,6 @@
             </p>
         </div>
     </div>
-
 
 </body>
 

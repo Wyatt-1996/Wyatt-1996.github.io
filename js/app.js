@@ -1,10 +1,29 @@
 $('document').ready(function() {
 
+    // var menuClicked = false;
+    // var menuBtn = $('.menu');
+
+    // menuBtn.on('click', function() {
+
+    //     menuClicked = true;
+    //     rotate();
+    // });
+
+    // function rotate() {
+
+    //     menuBtn.css({
+    //         'transition': '.2s', 
+    //         'transition-timing-function': 'ease-in-out', 
+    //         'transform': 'rotate(-45deg)'
+    //     });
+
+    // };
+
     // add modal toggle attribute to contact form btn
     $('#submit-btn').attr('uk-toggle', 'target: #modal-example');
 
     // form submit
-    $('#submit-btn').on('click', function() {
+    $('#submit-btn').on('submit', function() {
         event.preventDefault();
 
         // capture name
@@ -35,10 +54,6 @@ $('document').ready(function() {
     $('#close-modal').on('click', function() {
         document.location.reload(true);  
     });
-    
-
-
-
 
 });
 // .

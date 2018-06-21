@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
         crossorigin="anonymous"></script>
@@ -21,45 +24,176 @@
     <title>&copy; Wyatt Sommer - Portfolio</title>
 </head>
 
-<body class="uk-animation-scale-up">
+<body>
+    <div class="uk-position-top">
+        <nav class="uk-navbar-container animated fadeInDown" uk-navbar>
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="index.html" class="uk-icon-link" uk-icon="home"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="uk-navbar-center">
+                <ul class="uk-navbar-nav">
+                    <li>Projects</li>
+                </ul>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <h2 class="menu">+</h2>
+                        <div uk-dropdown="mode: click">
+                            <ul class="uk-list">
+                                <li>
+                                    <a href="about.html">
+                                        <p class="navi">About</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="portfolio.html">
+                                        <p class="navi onpage">Projects</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Resume.html">
+                                        <p class="navi">Resumé</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">
+                                        <p class="navi">Contact</p>
+                                    </a>
+                                </li>
+                                <hr>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/wyatt-sommer-b58136152/">
+                                        <img class="footer-img" src="images/linkedin.png">
+                                    </a>
+                                    <a href="https://stackoverflow.com/users/9182832/wyatt-sommer">
+                                        <img class="footer-img" src="images/stackoverflow.png">
+                                    </a>
+                                    <a href="https://github.com/Wyatt-1996">
+                                        <img class="footer-img" src="images/Github-120.png">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-    <!-- <div id="slider" class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
-        <ul class="uk-slideshow-items">
-            <li>
-                <img src="images/mtns.jpg" alt="" uk-cover>
-                <div class="uk-position-center uk-position-small uk-text-center">
-                    <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Heading</h2>
-                    <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
+    <div class="uk-container animated zoomIn">
+        <div class="grid uk-child-width-1-3@m uk-grid-match uk-text-center" uk-grid>
+            <a href="#">
+                <div class="project">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img class="project-img" src="images/mtns.jpg" alt="">
+                        </div>
+                    </div>
+                    <h3 class="title">Media Top</h3>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </div>
-            </li>
-            <li>
-                <img src="images/mtns.jpg" alt="" uk-cover>
-                <div class="uk-position-center uk-position-small uk-text-center">
-                    <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Heading</h2>
-                    <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
+            </a>
+            <a href="#">
+                <div class="project">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img class="project-img" src="images/mtns.jpg" alt="">
+                        </div>
+                    </div>
+                    <h3 class="title">Media Top</h3>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </div>
-            </li>
-            <li>
-                <img src="images/mtns.jpg" alt="" uk-cover>
-                <div class="uk-position-center uk-position-small uk-text-center">
-                    <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Heading</h2>
-                    <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
+            </a>
+            <a href="#">
+                <div class="project">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img class="project-img" src="images/mtns.jpg" alt="">
+                        </div>
+                    </div>
+                    <h3 class="title">Media Top</h3>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </div>
-            </li>
-            <li>
-                <img src="images/mtns.jpg" alt="" uk-cover>
-                <div class="uk-position-center uk-position-small uk-text-center">
-                    <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Heading</h2>
-                    <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
+            </a>
+        </div>
+        <div class="grid uk-child-width-1-3@m uk-grid-match uk-text-center" uk-grid>
+            <a href="#">
+                <div class="project">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img class="project-img" src="images/mtns.jpg" alt="">
+                        </div>
+                    </div>
+                    <h3 class="title">Media Top</h3>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </div>
-            </li>
-        </ul>
-
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-    </div> -->
-
-    <div class="uk-container" id="cards">
+            </a>
+            <a href="#">
+                <div class="project">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img class="project-img" src="images/mtns.jpg" alt="">
+                        </div>
+                    </div>
+                    <h3 class="title">Media Top</h3>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="project">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img class="project-img" src="images/mtns.jpg" alt="">
+                        </div>
+                    </div>
+                    <h3 class="title">Media Top</h3>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+            </a>
+        </div>
+        <div class="grid uk-child-width-1-3@m uk-grid-match uk-text-center" uk-grid>
+            <a href="#">
+                <div class="project">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img class="project-img" src="images/mtns.jpg" alt="">
+                        </div>
+                    </div>
+                    <h3 class="title">Media Top</h3>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="project">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img class="project-img" src="images/mtns.jpg" alt="">
+                        </div>
+                    </div>
+                    <h3 class="title">Media Top</h3>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="project">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img class="project-img" src="images/mtns.jpg" alt="">
+                        </div>
+                    </div>
+                    <h3 class="title">Media Top</h3>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- card layout -->
+    <!-- <div class="uk-container" id="cards">
         <div class="uk-child-width-expand@s uk-text-center" uk-grid>
             <div>
                 <div class="uk-card uk-card-default uk-card-body">
@@ -130,10 +264,11 @@
                 <div class="uk-card uk-card-default uk-card-body">Item</div>
             </div>
         </div>
-    </div>
-
+    </div> -->
+    <a class="link" href="#">
+        <p class="animated fadeInUp">View More on Github</p>
+    </a>
 
 </body>
 
 </html>
-<!-- /. -->
