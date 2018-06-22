@@ -13,14 +13,14 @@ a:hover{
     margin-top: 9px;
     transition: .2s;
     transition-timing-function: ease-in-out;
-    color: #0400FF;
+    color: white;
 }
 
 .home:hover{
     transition: .2s;
     transition-timing-function: ease-in-out;
     transform: scale(1.2);
-    color: white;
+    color: #0400FF;
 }
 
 .uk-dropdown{
@@ -114,7 +114,7 @@ a:hover{
 
     .uk-align-center{
         width: 360px;
-        margin-top: 240px;  
+        margin-top: 222px;  
     }
 
 }
@@ -122,8 +122,8 @@ a:hover{
 @media screen and (max-width: 375px) {
 
     .uk-align-center{
-        width: 270px;
-        margin-top: 240px;  
+        width: 300px;
+        margin-top: 222px;  
     }
 
 }

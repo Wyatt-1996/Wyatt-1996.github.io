@@ -23,7 +23,8 @@
 
 @media screen and (max-width: 441px) {
 
-    #social {
-        margin-top: 60px;
+    #contact-form{
+        margin-top: 111px;
+        margin-bottom: 30px;
     }
 }
